@@ -1,0 +1,9 @@
+stages:
+  - integration-test
+  
+test-frontend:
+  image: node:lts
+  stage: integration-test
+  script:
+    - npm i
+    - npm test
